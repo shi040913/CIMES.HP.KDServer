@@ -1,0 +1,100 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Platforms>AnyCPU;x64</Platforms>
+
+		<!--生成输出路径-->
+		<!--\$(Configuration)-->
+		<OutputPath>..\bin\Release\PluginsMES\</OutputPath>
+
+		<!-- (使用通用输出目录) 启用后无法将Nuget引用的DLL复制到输出目录-->
+		<UseCommonOutputDirectory>false</UseCommonOutputDirectory>
+		<!--把NuGet包放到项目中-->
+		<RestorePackagesPath>..\packages</RestorePackagesPath>
+		<!--生成的输出路径不带Target-->
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+
+		<Version>1.0.2</Version>
+		<AssemblyVersion>1.2.10.0</AssemblyVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DebugType>full</DebugType>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<DebugType>full</DebugType>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DebugType>none</DebugType>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<DebugType>none</DebugType>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="CFX.CFXSDK" Version="2.0.5" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Reference Include="CI.Localization">
+			<HintPath>..\bin\Release\CI.Localization.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="CI.Database">
+			<HintPath>..\bin\Release\CI.Database.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="CI.Logger">
+			<HintPath>..\bin\Release\CI.Logger.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="CI.Toolkit.UI">
+			<HintPath>..\bin\Release\CI.Toolkit.UI.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="CI.Utility">
+			<HintPath>..\bin\Release\CI.Utility.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="CI.Vision">
+			<HintPath>..\bin\Release\CI.Vision.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="CIBGMOVE">
+			<HintPath>..\bin\Release\CIBGMOVE.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="HandyControl">
+			<HintPath>..\bin\Release\HandyControl.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="HslCommunication">
+			<HintPath>..\bin\Release\HslCommunication.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="Newtonsoft.Json">
+			<HintPath>..\bin\Release\Newtonsoft.Json.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Page Update="Properties\DesignTimeResources.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+			<ContainsDesignTimeResources>True</ContainsDesignTimeResources>
+		</Page>
+	</ItemGroup>
+
+</Project>

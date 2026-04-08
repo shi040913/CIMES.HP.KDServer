@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "$(MSBuildProjectName)": {
+      "commandName": "Executable",
+      "executablePath": "D:\\项目专用文件夹\\CIMES.HP.KDServer\\bin\\Release\\CI.OnLine.exe",
+      "workingDirectory": "..\\bin\\Release"
+    }
+  }
+}
