@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.37111.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIMes.HP.KDServer", "CIMES.HP.KDServer\CIMes.HP.KDServer.csproj", "{A9FDF1D0-87DC-4A3B-B4AF-BE51EB0548C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SajetProxy32", "SajetProxy32\SajetProxy32.csproj", "{FDD3676E-7E73-4B0B-9A8D-AE3F6A38B827}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,14 @@ Global
 		{A9FDF1D0-87DC-4A3B-B4AF-BE51EB0548C4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A9FDF1D0-87DC-4A3B-B4AF-BE51EB0548C4}.Release|x64.ActiveCfg = Release|x64
 		{A9FDF1D0-87DC-4A3B-B4AF-BE51EB0548C4}.Release|x64.Build.0 = Release|x64
+		{FDD3676E-7E73-4B0B-9A8D-AE3F6A38B827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDD3676E-7E73-4B0B-9A8D-AE3F6A38B827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDD3676E-7E73-4B0B-9A8D-AE3F6A38B827}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FDD3676E-7E73-4B0B-9A8D-AE3F6A38B827}.Debug|x64.Build.0 = Debug|Any CPU
+		{FDD3676E-7E73-4B0B-9A8D-AE3F6A38B827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDD3676E-7E73-4B0B-9A8D-AE3F6A38B827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDD3676E-7E73-4B0B-9A8D-AE3F6A38B827}.Release|x64.ActiveCfg = Release|Any CPU
+		{FDD3676E-7E73-4B0B-9A8D-AE3F6A38B827}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
